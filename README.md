@@ -1,6 +1,6 @@
 # My fork of the ft817_buddy from G7UHN
 ## It's a work in progress !
-For the moment it is work with very little progress :D so please have pations with me.
+For the moment it is work with very little progress. So please have pations with me.:)
 
 A companion display &amp; controls for the FT-817.
 <!--
