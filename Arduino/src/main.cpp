@@ -38,7 +38,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_I2CDevice.h>
 #include <SoftwareSerial.h>
-#include <ft817.h>
+#include "ft817.h"
 #include <SparkFunDS1307RTC.h>
 #include <Wire.h>
 
@@ -73,15 +73,15 @@ int backlightCounter = 0;
 long freq;
 String mode;
 byte modeByte;
-byte modeBase;    // used for the radio to return to this mode after generating Tune signal... needed to accomodate the CW/CWR/DIG NAR codes
+byte modeBase;            // used for the radio to return to this mode after generating Tune signal... needed to accomodate the CW/CWR/DIG NAR codes
 byte modeReturn;
 byte abcKeys = B1111;
-int buttonStatus = 0;   // analog value of buttonPin...
-int button = 0;         // ...button number
+int buttonStatus = 0;     // analog value of buttonPin...
+int button = 0;           // ...button number
 byte sMeter;
 byte MSB;
 byte LSB;
-int currentPage = 2;    // initialise at the last page
+int currentPage = 2;      // initialise at the last page
 bool softkeyStatus[6] = {0, 0, 0, 0, 0, 0};
 short int hh = 0;             // clock hour
 short int mm = 0;             // clock minute
